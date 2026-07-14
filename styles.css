@@ -344,6 +344,92 @@ h1 {
   font-weight: 680;
 }
 
+.comparison {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: clamp(54px, 7vh, 76px) clamp(22px, 5vw, 64px) 0;
+  text-align: center;
+}
+
+.comparison h2 {
+  margin: 0;
+  color: var(--white);
+  font-size: clamp(26px, 2.4vw, 34px);
+  font-weight: 720;
+  line-height: 1.08;
+  letter-spacing: -.04em;
+}
+
+.comparison-content {
+  width: min(100%, 900px);
+  margin: 28px auto 0;
+}
+
+.comparison-table {
+  width: 100%;
+  table-layout: fixed;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-spacing: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, .012);
+}
+
+.comparison-table th,
+.comparison-table td {
+  width: 50%;
+  padding: 18px 22px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.4;
+  letter-spacing: -.012em;
+}
+
+.comparison-table th {
+  color: #c3cac6;
+  border-bottom: 1px solid rgba(255, 255, 255, .12);
+  background: rgba(255, 255, 255, .02);
+  font-size: 15px;
+  font-weight: 680;
+}
+
+.comparison-table td {
+  color: var(--gray);
+  font-size: clamp(15px, 1.4vw, 17px);
+}
+
+.comparison-table th + th,
+.comparison-table td + td {
+  border-left: 1px solid rgba(255, 255, 255, .1);
+}
+
+.comparison-table tbody tr:not(:last-child) td {
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+
+.comparison-table th:nth-child(2) {
+  color: var(--green-bright);
+  background: rgba(61, 220, 132, .055);
+}
+
+.comparison-table td:nth-child(2) {
+  color: rgba(174, 240, 204, .94);
+  background: rgba(61, 220, 132, .025);
+}
+
+.comparison-callout {
+  margin: 18px 0 0;
+  padding: 18px clamp(18px, 3vw, 30px);
+  color: #aeb6b1;
+  border: 1px solid rgba(61, 220, 132, .18);
+  border-radius: 18px;
+  background: rgba(61, 220, 132, .035);
+  font-size: clamp(15px, 1.3vw, 17px);
+  line-height: 1.55;
+  letter-spacing: -.012em;
+  text-wrap: balance;
+}
+
 .setup {
   width: min(1180px, 100%);
   margin: 0 auto;
@@ -423,6 +509,20 @@ h1 {
   .where-content {
     width: min(100%, 420px);
     margin-top: 24px;
+  }
+
+  .comparison {
+    padding-top: 52px;
+  }
+
+  .comparison-content {
+    width: min(100%, 420px);
+    margin-top: 24px;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 14px 12px;
   }
 
   .setup {
