@@ -854,20 +854,46 @@ h1 {
 
 @media (max-width: 600px) {
   .upgrade {
-    padding-top: 88px;
+    padding-top: 72px;
+  }
+
+  h1 {
+    font-size: clamp(38px, 10.6vw, 46px);
+    line-height: .98;
+  }
+
+  .intro p {
+    margin-top: 10px;
   }
 
   .device-visual {
     width: min(84vw, 350px);
-    margin-top: 0;
+    margin-top: -6px;
     aspect-ratio: 1.28 / 1;
     border-radius: 24px;
   }
 
+  .product-intro {
+    margin-top: 8px;
+  }
+
+  .proof {
+    margin-top: 10px;
+  }
+
+  .stats {
+    gap: 1px;
+  }
+
+  .compatibility-action {
+    margin-top: 6px;
+  }
+
   .actions {
     width: min(100%, 420px);
+    margin-top: 6px;
     flex-direction: column;
-    gap: 13px;
+    gap: 8px;
   }
 
   .button { width: 100%; }
@@ -877,6 +903,15 @@ h1 {
     width: min(100%, 420px);
     max-width: 310px;
     margin-inline: auto;
+    line-height: 1.35;
+  }
+
+  .trust {
+    margin-top: 8px;
+  }
+
+  .warranty {
+    margin-top: 2px;
   }
 
   .closing-actions {
@@ -899,7 +934,6 @@ h1 {
     padding-bottom: 66px;
   }
 
-  h1 { font-size: clamp(43px, 12.6vw, 58px); }
   .intro p { max-width: 355px; }
 
   .publication-logos {
