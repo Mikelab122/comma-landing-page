@@ -446,9 +446,20 @@ h1 {
   letter-spacing: -.04em;
 }
 
+.setup-subhead {
+  margin: 10px auto 0;
+  color: var(--gray);
+  font-size: clamp(15px, 1.3vw, 17px);
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -.012em;
+  text-align: center;
+  text-wrap: balance;
+}
+
 .setup-grid {
   width: 100%;
-  margin-top: 28px;
+  margin-top: 22px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(18px, 2.3vw, 28px);
@@ -532,7 +543,7 @@ h1 {
 
   .setup-grid {
     width: min(100%, 420px);
-    margin: 24px auto 0;
+    margin: 20px auto 0;
     grid-template-columns: 1fr;
     gap: 20px;
   }
