@@ -853,6 +853,17 @@ h1 {
 }
 
 @media (max-width: 600px) {
+  .upgrade {
+    padding-top: 88px;
+  }
+
+  .device-visual {
+    width: min(84vw, 350px);
+    margin-top: 0;
+    aspect-ratio: 1.28 / 1;
+    border-radius: 24px;
+  }
+
   .actions {
     width: min(100%, 420px);
     flex-direction: column;
@@ -890,12 +901,6 @@ h1 {
 
   h1 { font-size: clamp(43px, 12.6vw, 58px); }
   .intro p { max-width: 355px; }
-
-  .device-visual {
-    width: 100%;
-    aspect-ratio: 1.28 / 1;
-    border-radius: 24px;
-  }
 
   .publication-logos {
     grid-template-columns: repeat(2, minmax(0, 1fr));
