@@ -424,6 +424,22 @@ h1 {
   }
 }
 
+@media (max-width: 600px) {
+  .actions {
+    width: min(100%, 420px);
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  .button { width: 100%; }
+
+  .trust {
+    width: min(100%, 420px);
+    max-width: 310px;
+    margin-inline: auto;
+  }
+}
+
 @media (max-width: 520px) {
   .brand-wordmark { width: 104px; }
   .brand-lockup { gap: 10px; }
@@ -442,14 +458,6 @@ h1 {
     aspect-ratio: 1.28 / 1;
     border-radius: 24px;
   }
-
-  .actions {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .button { width: 100%; }
-  .trust { max-width: 310px; }
 
   .publication-logos {
     grid-template-columns: repeat(2, minmax(0, 1fr));
