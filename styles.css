@@ -377,6 +377,16 @@ h1 {
   letter-spacing: -.012em;
 }
 
+@media (min-width: 761px) {
+  .upgrade {
+    padding-top: clamp(38px, 4vh, 48px);
+  }
+
+  .device-visual {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 760px) {
   .site-brand {
     top: 22px;
